@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Menu.css">
+</head>
+
+<body>
+    <!-- This was cool but took to long time to load on "not so good internet"
+    <div id="startScreen">
+        <div id="box"></div>
+    </div>-->
+    
+    <div id="menu">
+        <div id="menu-content">
+            <p class="menu-text" onclick="GoTo('AboutMe')">About Me</p>
+            <p class="menu-text" onclick="GoTo('projects')">Projects</p>
+            <p class="menu-text" onclick="GoTo('contactsDiv')">Contacts</p>
+        </div>
+    </div>
+
+    <h1 id="start">Hello welcome to my website with my projects!</h1>
+
+
+    <div id="AboutMe">
+        <div id="Portfolio">
+            <img id="PorfolioIMG" src="Images/Simon_bild.jpg">
+        </div>
+        <div id="DescriptionBox">
+            <h3 class="align_left">About me</h3>
+            <p class="align_left">
+                Hello! My name is Simon Strand, I am 23 years olds and from Sweden, I like to code/program in C++, C#
+                and Javascript, but I am also open to other languages.
+                <br>
+                I started coding in gymnasiet (16 years old), where we learned the basic, I fell in love with the
+                problem solving and to create something.
+                I then went to BTH, a university in Karlskrona (Sweden), where I was tought some of the more advanced
+                things, such as making a simple Game Engine with DirectX 11 and Networking with sockets.
+                I also like to create small application in Unity and SFML.
+                <br>
+                As a programmer I would like to solve problems while also creating something fun, visually cool or/and
+                creative.
+            </p>
+            <h3 class="align_left">Outside Programming</h3>
+            <p class="align_left">
+                In addition to my passion for coding and problem solving, I have a diverse set of interests to keep me
+                inspired.
+                <br>
+                <strong>Track and Field:</strong>
+                Outside of programming I like to train and compete in track and field event such as 400m, discus, and
+                more.
+                <br>
+                <strong>Video Games:</strong>
+                I also like to play video games, such as league of legends, Tekken and more.
+            </p>
+        </div>
+
+    </div>
+
+    <div id="projectHeader">
+        <h2 class="ContactHeader">Projects</h2>
+        <p>Here's some of the projects that I have worked on over the years.</p>
+        <div id="projects">
+
+            <div class="projectDiv">
+                <div class="Title_And_Video">
+                    <h3>Presumed Dead Game</h3>
+                    <iframe width="98%" height="480" frameborder="0"
+                        allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowfullscreen
+                        src="https://www.youtube.com/embed/syGpL7jan6A">
+                    </iframe>
+                </div>
+                <div class="descriptionBox">
+                    <span class="material-symbols-outlined DropDown">expand_more</span>
+                    <p class="descriptionText">
+                        <strong>Presumed Dead</strong> is a school game project that me and seven other people worked
+                        on.<br>
+                        The game's goal is to kill monsters in the woods, gather perks and abilites, and find a portal
+                        to go to the next level.<br>
+                        I myself mainly worked on the network part of the game, being able to play up to four people,
+                        using
+                        both TCP and UDP protocol.<br>
+                        You can find the project on <a href="https://github.com/SiTronXD/StortSpelBTH">GitHub</a> or <a
+                            href="https://oscarnordstrom.itch.io/presumed-dead">Itch.io</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projectDiv">
+                <div class="Title_And_Video">
+                    <h3>Void Rush Game</h3>
+                    <iframe width="98%" height="480" frameborder="0"
+                        allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowfullscreen
+                        src="https://www.youtube.com/embed/rnMFwrjrB9Q">
+                    </iframe>
+                </div>
+                <div class="descriptionBox">
+                    <span class="material-symbols-outlined DropDown">expand_more</span>
+                    <p class="descriptionText">
+                        <strong>Void Rush</strong> is a school game project that me and five other people worked on.<br>
+                        The game's goal is to jump from platform to platform avoiding a ghost that is chasing you, at
+                        the end there is a small mini game that
+                        the player needs to complete before moving on to the next level.<br>
+                        I myself mainly worked on the engine, built using DirectX 11.<br>
+                        You can find the project on <a href="https://github.com/lr222gw/void_rush">GitHub</a> or <a
+                            href="https://oscarnordstrom.itch.io/void-rush">Itch.io</a>.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="projectDiv">
+                <div class="Title_And_Video">
+                    <h3>Particle Oriented Bounding Box Skeletal Animation</h3>
+                    <iframe width="98%" height="480" frameborder="0"
+                        allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowfullscreen
+                        src="https://www.youtube.com/embed/6mjAeTkl1ak"></iframe>
+                </div>
+
+                <div class="descriptionBox">
+                    <span class="material-symbols-outlined DropDown">expand_more</span>
+                    <p class="descriptionText">
+                        Particle Oriented Bounding Box Skeletal Animation or POBBSA use the combination of both skeletal
+                        animation, particles and oriented bounding boxes (OBB) to create skeletal animation with
+                        particles with splashing effects.<br>
+                        More info about this project can be found on
+                        <a
+                            href="https://www.diva-portal.org/smash/record.jsf?dswid=493&pid=diva2%3A1791831&c=1&searchType=SIMPLE&language=sv&query=Particle+Oriented+Bounding+Box+Skeletal+Animation&af=%5B%5D&aq=%5B%5B%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&sortOrder2=title_sort_asc&onlyFullText=false&sf=all">
+                            DiVA
+                        </a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projectDiv">
+                <div class="Title_And_Video">
+                    <h3>Game Engine DirectX 11</h3>
+                    <iframe width="98%" height="480" frameborder="0"
+                        allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowfullscreen
+                        src="https://www.youtube.com/embed/iowWbxsap9Y?si=RrYSASo-24BzVLn_">
+                    </iframe>
+                </div>
+                <div class="descriptionBox">
+                    <span class="material-symbols-outlined DropDown">expand_more</span>
+                    <p class="descriptionText">
+                        A game engine created in C++ and DirectX11.<br>
+                        The engine uses multiple techniques such as:<br>
+                        <strong>Deffered Rendering: </strong> To handle multiple dynamic lighs faster.<br>
+                        <strong>Custom Obj File loader: </strong> The engine has an custom obj file loader that can load
+                        different models and meshes
+                        with different kind of materials.<br>
+                        <strong>Displacement Mapping and level of detail using Tessellation Hardware: </strong> Based on
+                        the cameras position, some objects will transform and get smoother edges or change the vertecies
+                        position based on a height map.<br>
+                        <strong>Dynamic Shadow Mapping: </strong> To create "realistic" shadows.<br>
+                        <strong>Dynamic Cube mapping: </strong> Taking 6 screenshots of the scene each frame to create a 360° mirror of the scene <br>
+                        <strong>View Frustum Culling using Quadtree: </strong> To cull away static objects that the camera is not looking at<br>
+                        <strong>Small particle system: </strong> Using points in a vertecies buffer to create billboarded particles and a custom compute shader to update the position
+                        of the particles to create a small particle system. 
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="projectDiv">
+                <div class="Title_And_Video">
+                    <h3>The Galaxy Shooter</h3>
+                    <iframe width="98%" height="480" frameborder="0"
+                        allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowfullscreen
+                        src="https://www.youtube.com/embed/p1I0lE4Beks">
+                    </iframe>
+                </div>
+                <div class="descriptionBox">
+                    <span class="material-symbols-outlined DropDown">expand_more</span>
+                    <p class="descriptionText">
+                        The Galaxy Shooter was my first game that I ever did.<br>
+                        The game is about taking stars to get points, shoot enemies that tries to kill you and before
+                        the timer runs out go to a reset station, the
+                        reset station will then reset the timer and add points.<br>
+                        We got 4 weeks to create the game and it's created with C++ and SFML.<br>
+                        The game can be found on <a href="https://laserjagaren.itch.io/the-galaxy-shooter">itch.io</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projectDiv">
+                <div class="Title_And_Video">
+                    <h3>Western Gold</h3>
+                    <iframe width="98%" height="480" frameborder="0"
+                        allow="accelerometer; clipboard-write; gyroscope; picture-in-picture; web-share" allowfullscreen
+                        src="https://www.youtube.com/embed/arffhvsSXeg">
+                    </iframe>
+                </div>
+                <div class="descriptionBox">
+                    <span class="material-symbols-outlined DropDown">expand_more</span>
+                    <p class="descriptionText">
+                        Western Gold is my second game that I ever created (We where 2 people).<br>
+                        The game goes out on getting the gold that is hidden in the world, however, the gold is heavily guarded by cowboys who patrol the area according to given schedules.
+                        The player is armed with his trusty revolver with limited amounts of ammunition per level. The players revolver is loud however, and can attract enemies.
+                        The player can instead throw bullets to distract the enemies and sneak past.<br>
+                        The game code is avalible at <a href="https://github.com/SkitzFist/W_Gold">Github</a>.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contactsDiv">
+
+        <h2 class="ContactHeader">Contacts</h2>
+
+        <p class="ContactPar">You can contact me via email or by phone</p>
+
+        <div id="Contacts">
+
+
+            <h3 class="contact_info">
+                <span class="material-symbols-outlined">call</span>
+                Phone: 070-255 03 30
+            </h3>
+
+            <h3 class="contact_info">
+                <span class="material-symbols-outlined">mail</span>
+                e-mail: simonstrandisen@gmail.com
+            </h3>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="javascript.js"></script>
+
+</html>
+
+<!--
+    frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+-->
