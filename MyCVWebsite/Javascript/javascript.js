@@ -52,4 +52,20 @@ function InitDropDown() {
     }
 }
 
+function setAge(birthday)
+{
+    const birth = new Date(birthday);
+    const today = new Date();
+    let age = today.getFullYear() - birth.getFullYear();
+    
+    const monthDiff = today.getMonth() - birth.getMonth();
+    const dayDiff = today.getDate() - birth.getDate();
+    if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+        age--;
+    }
+
+    document.getElementById("age").textContent = age;
+}
+
+setAge("2000-07-04");
 InitDropDown();

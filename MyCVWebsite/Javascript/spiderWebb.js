@@ -2,8 +2,8 @@ let canvas = document.getElementById("SpiderWebb");
 let ctx = canvas.getContext("2d");
 ctx.globalCompositeOperation = 'destination-atop';
 
-const CanvasHeight = canvas.clientHeight;
-const CanvasWidth = canvas.clientWidth;
+var CanvasHeight = canvas.clientHeight;
+var CanvasWidth = canvas.clientWidth;
 
 ctx.canvas.width = CanvasWidth;
 ctx.canvas.height = CanvasHeight;
@@ -222,7 +222,15 @@ function updatePoints(dt)
         
 }
 
+function changeCanvasSize()
+{
+    CanvasHeight = canvas.clientHeight;
+    CanvasWidth = canvas.clientWidth;
+    ctx.canvas.width = CanvasWidth;
+    ctx.canvas.height = CanvasHeight;
+}
 
+window.onresize = changeCanvasSize;
 
 start();
 window.requestAnimationFrame(update);
